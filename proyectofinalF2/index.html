@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salchipapa Bonus</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        
+            <a href="javascript:abrir()" class="texto">Ordena aquí</a>
+        
+    </header>
+
+
+    <div class="ventana" id="vent">
+        <h1>Solicitar un Pedido</h1>
+        <label for ="txt_1">Ingresa tu nombre:* </label>
+        <input type="text" id="txt_1" placeholder="Escribe algo"><br><br>
+        <label for ="txt_2">Ingresa tu direción:* </label> 
+        <input type="text" id="txt_2" placeholder="Escribe algo"><br><br>
+        <label for ="select">Selecciona tu comida:* </label>
+        <select name="" id="select">
+            <option value="">Selecciona</option>
+            <option value="1">Salchipapa</option>
+            <option value="2">Salchipapa Mixta</option>
+            <option value="3">Salchipapa de Pollo</option>
+            <option value="4">Salchipapa Bonus</option>
+
+        </select><br><br>
+        <label for ="selectb">Selecciona tu bebida:* </label>
+        <select name="" id="selectb">
+            <option value="">Selecciona</option>
+            <option value="1">Chica Morada</option>
+            <option value="2">Jugo de Maracuya</option>
+        </select><br><br>
+        <button id="btn" disabled>Enviar</button>
+
+
+
+        <div id="cerrar"> <a href="javascript:cerrar()"><img src="imagenes/error.png" alt="#" width="30px"></a> </div>
+    </div>
+
+
+
+
+    <section id="logo">
+        <div class="imagen">
+            <img src="imagenes/Bonus.png" alt="logo" width="100%">
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#carta">Carta</a></li>
+                </ul>
+            </nav>
+        </div> 
+    </section>
+
+    <section id="nosotros">
+        <h1>Nosotros</h1>
+        <div class="imagen-restaurant">
+            <img src="imagenes/restaurante.jpg" alt="foto restaurante" width=90%>
+        </div>
+        <div class="parrafos">
+            <p id="parrafo1"><b>
+                Nosotros somos la salchipaperia Bonus, un restaurante donde se cocina la mejor salchipapa del Perú, nos encontramos en la Av. Pardo 227, en el distrito de Jesús María en Lima. Está abierta al público desde las 6pm hasta las 11pm de lunes a sabado. Cuenta con todos protocolos de bioseguridad y el acceso es con DNI y con carnet de vacunación que certifique 2 dosis. Además contamos con el servicio de delivery para los distritos de Jesús María, Lince, Pueblo LIbre, San Isidro, Miraflores y Magdalena. 
+            </b></p>
+        </div>
+    </section>
+
+    <section id="carta">
+        <h1>Carta</h1>
+    </section>
+
+    <section id="salchi">
+        <h1>Menú de Salchipapas</h1>
+    </section>
+
+    <section id="container-images-flex" >
+
+        <div class="container-row-flex">
+            <div class="card-flex-product">
+                <div class="car-div-product">
+                    <img src="imagenes/salchipapa.jpg" onclick="openFulImg(this.src)" alt="#" class="card-product" width="340px">
+            </div>
+            <div class = description-div>
+                <h2 class="description-card">
+                    Salchipapa
+                </h2>
+                <h3 class="description-card">
+                    Costo: S/.15
+                </h3>
+                <h4 class="description-card">
+                    (papa amarilla y hot dog)
+                </h4>
+            </div>
+            </div>
+            <div class="card-flex-product">
+                <div class="car-div-product">
+                    <img src="imagenes/salchipapabonus.jpg" onclick="openFulImg(this.src)" alt="#" class="card-product" width="300px">
+            </div>
+            <div class = description-div>
+                <h2 class="description-card">
+                    Salchipapa Bonus
+                </h2>
+                <h3 class="description-card">
+                    Costo: S/.24
+                </h3>
+                <h4 class="description-card">
+                    (papa amarilla, hot dog, carne, pollo y ensalada)
+                </h4>
+            </div>
+            </div>      
+        </div>
+    </section>
+
+    <section id="container-otro-flex">
+        <div class="container-row-flex">
+            <div class="card-flex-product">
+                <div class="car-div-product">
+                    <img src="imagenes/salchipapamixta.jpg" onclick="openFulImg(this.src)" alt="#" class="card-product" width="340px">
+            </div>
+            <div class = description-div>
+                <h2 class="description-card">
+                    Salchipapa Mixta
+                </h2>
+                <h3 class="description-card">
+                    Costo: S/.18
+                </h3>
+                <h4 class="description-card">
+                    (papa amarilla, hot dog, carne de hamburguesa, chorizo y ensalada)
+                </h4>
+            </div>
+            </div>
+            <div class="card-flex-product">
+                <div class="car-div-product">
+                    <img src="imagenes/salchipapapollo.jpg" onclick="openFulImg(this.src)" alt="#" class="card-product" width="300px">
+            </div>
+            <div class = description-div>
+                <h2 class="description-card">
+                    Salchipapa de Pollo
+                </h2>
+                <h3 class="description-card">
+                    Costo: S/.21
+                </h3>
+                <h4 class="description-card">
+                    (papa amarilla, hot dog, pollo y ensalada)
+                </h4>
+            </div>
+            </div>
+    </section>
+
+    <section id="bebidas">
+        <h1>Bebidas</h1>
+    </section>
+
+    <section id="container-images-flex" >
+
+        <div class="container-row-flex">
+            <div class="card-flex-product">
+                <div class="car-div-product">
+                    <img src="imagenes/chicha.jpg" onclick="openFulImg(this.src)" alt="#" class="card-product" width="310px">
+            </div>
+            <div class = description-div>
+                <h2 class="description-card">
+                    Chicha Morada
+                </h2>
+                <h3 class="description-card">
+                    Costo: S/.8
+                </h3>
+            </div>
+            </div>
+            <div class="card-flex-product">
+                <div class="car-div-product">
+                    <img src="imagenes/maracuya.jpg" onclick="openFulImg(this.src)" alt="#" class="card-product" width="300px">
+            </div>
+            <div class = description-div>
+                <h2 class="description-card">
+                    Jugo de Maracuya
+                </h2>
+                <h3 class="description-card">
+                    Costo: S/.10
+                </h3>
+            </div>
+            </div>      
+        </div>
+    </section>
+
+
+
+    <div class="ful-img" id="fulImgBox">
+        <img src="imagenes/salchipapa.jpg" id="fulImg" alt="#" width="600px">
+        <span onclick="closeImg()">X</span>
+    </div>
+
+  
+
+
+    <script src="script.js"></script>
+</body>
+</html>
