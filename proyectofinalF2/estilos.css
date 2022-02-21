@@ -1,0 +1,198 @@
+/*Parte Superior*/
+body{
+    margin: 0px;
+}
+header{
+    border-bottom: 6px solid black;
+    position: relative;
+    overflow: auto;
+    background-color: rgb(255, 207, 86);
+}
+
+header a{
+    float: right;
+    position: relative;
+    right: 10%;
+}
+
+a.texto{
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: black;
+}
+
+div.imagen{
+    width: 35%;
+    padding: 0% 32%;
+}
+div.menu{
+    border-top: 6px solid black;
+    border-bottom: 6px solid black;
+    overflow: auto;
+    background-color: rgb(255, 207, 86);
+}
+
+div.menu nav ul li{
+    display: inline;
+}
+nav li{
+    float: left;
+    padding: 0px 40px 0px 40px;
+    margin: 0px 10px 25px 10px;
+}
+div.menu nav{
+    float: right;
+    position: relative;
+    right: 40%;
+}
+li a{
+    text-decoration: none;
+    padding: 2px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+nav ul li a{
+    color: black;  
+}
+
+/*nosotros restaurant bonus*/
+#nosotros{
+    overflow: auto;
+    border-bottom: 6px solid black;
+}
+#nosotros h1{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 46%;
+    overflow: auto;
+}
+
+div.imagen-restaurant {
+    float: left;
+    width: 20%;
+    padding: 5px 20px 40px 20%;
+    overflow: auto;
+}
+div.parrafos #parrafo1{
+    text-align: justify;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5% 15%;
+}
+
+/*carta restaurante bonus*/
+#carta h1{
+    overflow: auto;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 47%;
+    overflow: auto;
+}
+#salchi h1{
+    overflow: auto;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 42%;
+    overflow: auto;
+}
+#salchi{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    background-color: rgb(255, 207, 86);
+}
+
+section.container-images-flex{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+   
+.container-row-flex{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+   
+.card-flex-product{
+    display: flex;
+    flex-direction: column;
+}
+   
+.description-card{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+   
+.card-product{
+margin-left: 10%;
+border-radius: 25px;
+border: 2px solid black;
+}
+
+
+/*bebidas*/
+#bebidas h1{
+    overflow: auto;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 47%;
+    overflow: auto;
+}
+#bebidas{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    background-color: rgb(255, 207, 86);
+}
+/*animacion de carta*/
+.car-div-product img:hover{
+    transform: scale(1.2);
+}
+
+/*imagen full*/
+.ful-img{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0,0,0,0.5);
+    position: fixed;
+    top:0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.ful-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:antiquewhite;
+}
+
+/*pedido*/
+.ventana{
+    background-color: rgb(226, 207, 181);
+    width: 30%;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 33px;
+    min-height: 250px;
+    border-radius: 22px;
+    position: fixed;
+    left: 34%;
+    top: 35%;
+    z-index: 1; 
+    display: none;
+}
+#cerrar{
+    position: absolute;
+    right: 3px;
+    top: 1px;
+}
+label{
+    display: block;
+}
